@@ -7,7 +7,7 @@ public class PrintN {
     }
     static void printNos(int N)
     {
-        //Your code here
+      
         if(N==1){
             System.out.print(1 + " ");
             return;
