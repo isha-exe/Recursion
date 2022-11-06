@@ -1,19 +1,11 @@
 import java.util.ArrayList;
 
-static ArrayList<Long> factorialNumbers(long N){
-        
-        ArrayList<Long> list = new ArrayList<Long>();
-        for(int i = 1; i <= N ; i++){
-            if(fact(i)<=N){
-                list.add(fact(i));
-            }
-            else if(fact(i)>N){
-                break;
-            }
+    static long sum(long N){
+        int sum = 0;
+        for(int i = 1 ; i<=N; i++){
+                sum += fact(i);
         }
-        return list;
-
-
+        return sum;
     }
     static long fact(long N){
         if(N==1){
